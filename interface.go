@@ -35,7 +35,7 @@ func (x driver) hello(message string) {
 	fmt.Println("My name is ", x.name, "I drove ", x.kmDriven, message)
 }
 
-func humamBeeingStuff(h humam) {
+func humamBeingStuff(h humam) {
 
 	switch h.(type) {
 	case dentist:
@@ -88,8 +88,8 @@ func main() {
 		kmDriven: 222000,
 	}
 
-	humamBeeingStuff(dentist1)
-	humamBeeingStuff(driver1)
+	humamBeingStuff(dentist1)
+	humamBeingStuff(driver1)
 
 	circle1 := circle{raio: 2}
 	square1 := square{size: 2}
