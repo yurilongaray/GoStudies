@@ -50,8 +50,12 @@ func main() {
 	encoder := json.NewEncoder(os.Stdout)
 
 	// same as json.Marshal but the marshal returns to a variable and the encoder always go to that interface (os.Stdout)
+	// in other words, this will print into terminal
 	encoder.Encode(actor1)
 
 	// stdout === Standard output (OS - Terminal)
 	// stdin === Standard input (keyboard)
+
+	// method chaining
+	json.NewEncoder(os.Stdout).Encode(actor1)
 }
