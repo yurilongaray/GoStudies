@@ -5,18 +5,19 @@ import (
 	"fmt"
 	"runtime"
 	"sync"
+	"sync/atomic"
 )
 
 var wg sync.WaitGroup
-var mu sync.Mutex
 
-// execute this file with the command go run --race mutex.go
+// execute this file with the command go run --race race-condition.go
 func main() {
 
 	fmt.Println(runtime.NumCPU())
-	fmt.Println("GoRoutines: ", runtime.NumGoroutine())
+	fmt.Println(runtime.NumGoroutine())
 
-	x := 0
+	var x int64
+
 	totalConcurrency := 1000
 
 	wg.Add(totalConcurrency)
@@ -25,22 +26,15 @@ func main() {
 
 		go func() {
 
-			// locking with mutex
-			mu.Lock()
-			y := x
+			atomic.AddInt64(&x, 1)
 
 			runtime.Gosched()
-
-			y++
-			x = y
-			// unlocking with mutex
-			mu.Unlock()
 
 			wg.Done()
 		}()
 	}
 
-	fmt.Println("GoRoutines: ", runtime.NumGoroutine())
+	fmt.Println(runtime.NumGoroutine())
 
 	wg.Wait()
 

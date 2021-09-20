@@ -72,6 +72,16 @@ func infoArea(f figure) {
 	fmt.Println(f.calculateArea())
 }
 
+//example using pointer into receiver
+func (d *driver) walk() {
+
+	fmt.Println("Using pointer into receiver", d.kmDriven)
+}
+
+type humamActions interface {
+	walk()
+}
+
 func main() {
 
 	dentist1 := dentist{
@@ -96,4 +106,12 @@ func main() {
 
 	infoArea(circle1)
 	infoArea(square1)
+
+	humamActions.walk(&driver1) //example using pointer
+
+	// this is a shortcut for (&driver1).walk()
+	driver1.walk()
+
+	// this is the correct way to call props from struct (but is unusual)
+	(&driver1).walk()
 }
