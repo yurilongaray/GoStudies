@@ -77,8 +77,8 @@ func main() {
 	fmt.Println(testMap)
 
 	// the second prop below shows that the value doesnt exist in map (COMMA OK IDIOM)
-	prop, exists := testMap["test99"]
-	fmt.Println(prop, exists)
+	prop, ok := testMap["test99"]
+	fmt.Println(prop, ok)
 
 	if propEx, existsEx := testMap["test99"]; !existsEx {
 
