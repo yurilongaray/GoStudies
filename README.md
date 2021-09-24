@@ -22,6 +22,9 @@
 - Go Vet (correctness → fetch for wrong code): go vet ./...
 - Go Lint (suggestions → fetch for bad code style): golint ./...
 - Go Test Flag (shows every kind of test): go help testflag
+- Go Test Coverage:
+	- go test --coverprofile coverage_report.out
+	- go tool cover -html=coverage_report.out
 
 Obs.: When using "./..." the command will consider all folders and subfolders of your path
 

@@ -1,0 +1,5 @@
+mode: set
+exemple.com/hello/tests_and_benchmarks/sum.go:3.27,7.25 2 1
+exemple.com/hello/tests_and_benchmarks/sum.go:12.2,12.14 1 1
+exemple.com/hello/tests_and_benchmarks/sum.go:7.25,10.3 1 1
+exemple.com/hello/tests_and_benchmarks/sum.go:15.32,18.2 1 0
