@@ -7,6 +7,10 @@
 - https://gobyexample.com/
 - https://golang.org/doc/effective_go
 
+
+## Disappointments
+- There is no Ternary and TryCatch in GoLang...
+
 ## Testing
 
 ```bash
