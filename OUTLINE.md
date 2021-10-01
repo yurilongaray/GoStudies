@@ -1,4 +1,4 @@
-# Outline - From Ellen Korbes
+# Outline - By Ellen Korbes
 
 ## 01 – Visão Geral do Curso
 
