@@ -1,10 +1,14 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"time"
+)
 
 func main() {
 
 	x := 60
+	t := time.Now()
 
 	if x > 100 || x == 20 {
 
@@ -19,7 +23,7 @@ func main() {
 
 	switch { // same using switch true {
 
-	case x > 100:
+	case t.Hour() > 10:
 		fmt.Println("CASE 1")
 
 	case x < 100 && x > 50:
