@@ -48,18 +48,20 @@ func main() {
 
 	var unknwon interface{}
 
-	unknwon = "22" // change to another value and see the type in the switch below
+	unknwon = true // change to another value and see the type in the switch below
 
 	switch unknwon.(type) {
 
 	case bool:
-		fmt.Println(("bool"))
-	case float64:
-		fmt.Println(("float64"))
+		fmt.Println("bool")
+	case float32, float64:
+		fmt.Println("float64")
 	case int:
-		fmt.Println(("int"))
+		fmt.Println("int")
 	case string:
-		fmt.Println(("string"))
+		fmt.Println("string")
+	case func():
+		fmt.Println("func")
 	default:
 		fmt.Println("Unknown")
 	}
