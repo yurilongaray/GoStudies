@@ -105,4 +105,15 @@ func main() {
 	newB = append(b, newB...)
 
 	fmt.Println(newB)
+
+	// changing the base array from slices (both slices are pointed to the same local in memory)
+	slice1 := make([]int, 10, 20)
+	slice2 := append(slice1, 1, 2, 3)
+
+	fmt.Println(slice1, slice2)
+
+	// OR slice1[1] = 99
+	slice2[1] = 99
+
+	fmt.Println(slice1, slice2)
 }
