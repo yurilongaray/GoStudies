@@ -39,6 +39,10 @@ func main() {
 
 	fmt.Println(animal1)
 
+	dontChangeMe(animal1)
+
+	fmt.Println(animal1)
+
 	changeMe(&animal1)
 
 	fmt.Println(animal1)
@@ -49,6 +53,13 @@ func increment(x *int) {
 	*x++
 
 	fmt.Println(*x)
+}
+
+// You can only change a value by reference when using pointers
+func dontChangeMe(p animal) {
+
+	p.name = "New name"
+	p.age = 99
 }
 
 func changeMe(p *animal) {
