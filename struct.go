@@ -106,6 +106,11 @@ func main() {
 	}
 
 	cat1.jump(22)
+
+	// starting props with its default
+	cat2 := cat{}
+
+	fmt.Println(cat2)
 }
 
 func (c cat) jump(time int) {
