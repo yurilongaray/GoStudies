@@ -1,3 +1,3 @@
-## [Overview](https://github.com/yurilongaray/GoStudies/OVERVIEW-GO.md)
+## [Overview](https://github.com/yurilongaray/GoStudies/blob/master/OVERVIEW-GO.md)
 
-## [COMMIT-RULES](https://github.com/yurilongaray/GoStudies/COMMIT-RULES.md)
+## [CommitRules](https://github.com/yurilongaray/GoStudies/blob/master/COMMIT-RULES.md)
