@@ -1,6 +1,10 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+
+	"github.com/cod3rcursos/goarea"
+)
 
 type pessoa struct {
 	name string
@@ -36,4 +40,6 @@ func main() {
 
 	imprimir(p, "Test1")
 	imprimir(a, "Test2")
+
+	fmt.Println(goarea.Circ(3.0))
 }
