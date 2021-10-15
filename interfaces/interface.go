@@ -114,4 +114,13 @@ func main() {
 
 	// this is the correct way to call props from struct (but is unusual)
 	(&driver1).walk()
+
+	// interface as generic type (This is the most generic type). You can use switch .type() to get the interface values type
+	var stuff interface{}
+	var stuff2 interface{}
+
+	stuff = 1
+	stuff2 = "LOL"
+
+	fmt.Println(stuff, stuff2)
 }
