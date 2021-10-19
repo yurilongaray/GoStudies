@@ -4,6 +4,9 @@
 - https://www.youtube.com/watch?v=WiGU_ZB-u0w&t=237s&ab_channel=AprendaGo
 - https://github.com/ellenkorbes/aprendago
 
+### Cod3rCursos
+https://www.udemy.com/course/curso-go/
+
 ## Docs
 - https://gobyexample.com/
 - https://golang.org/doc/effective_go
@@ -30,5 +33,9 @@
 - Go Test Coverage:
 	- go test --coverprofile coverage_report.out
 	- go tool cover -html=coverage_report.out
+
+- Design Pattern in Go: 
+	- Generator: A simple function that creates generate go routines and returns a channel;
+	- Multiplexer: Get two channels together into a single channel 
 
 Obs.: When using "./..." the command will consider all folders and subfolders of your path
